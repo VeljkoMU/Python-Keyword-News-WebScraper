@@ -1,3 +1,4 @@
+import json
 import sys
 
 from scraper import Scraper
@@ -8,6 +9,8 @@ keyword = sys.argv[2]
 
 scraper = Scraper(url, keyword)
 
-results = scraper.getLinkedPagesWithKeyword(1)
+#results = scraper.getLinkedPagesWithKeyword(1)
+#scraper.getTextWithKeyword()
+scraper.getImagesFromPage()
 
-print(results)
+#print(json.dumps(results, indent=4))
